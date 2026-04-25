@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Diseño.css">
+</head>
+<body>
+
+     <section class="Juego">
+        <h1>Adivinemos el número</h1>
+     <div class="container">
+        <p>Estoy pensando en un número entre 1 y 10. ¿Puedes adivinarlo?</p>
+     </div>
+     <form id="Casilla">
+
+        <input type="number" placeholder="Ingresa un número" id="Numero">
+        <button class="adivina" type="submit">Adivinar</button>
+
+     </form>
+
+     <button class="reset" type="button" onclick="reinicio()">Reiniciar</button>
+     <p id="Mensaje"></p>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

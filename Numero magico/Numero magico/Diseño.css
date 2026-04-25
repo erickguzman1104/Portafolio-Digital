@@ -1,0 +1,67 @@
+    body  {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background: linear-gradient(to top, #7b4ab3, #d5a5ea, #df8fdf88, #f7f7f7f6);
+}
+.Juego {
+    padding: 30px;
+    border-radius: 15px;
+    color: #5b5f67;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    text-align: center;
+    margin: 100px auto;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.adivina{
+    display: block;
+    margin: 5px auto;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    background: white ;
+    border-radius: 8px;
+}
+.adivina:hover {
+    background: linear-gradient( to right, #0a497b, white, red ) ;
+}
+.reset {
+    display: block;
+    margin: 5px auto;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    background: white ;
+    border-radius: 8px;
+}
+.reset:hover {
+    background: linear-gradient( to right, #0a497b, white, red ) ;
+}
+input {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 255, 208, 0.8);
+}
+button:active {
+    transform: scale(0.95);
+}
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+}

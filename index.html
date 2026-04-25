@@ -3,106 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erick | Portafolio Digital</title>
+    <title>Erick Tech | Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <header class="navbar">
-        <div class="logo">Erick<span>.tech</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Acerca de mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Sección Inicio -->
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">Erick.Tech</span>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#acerca">Acerca de mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto" class="nav-cta">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>Hola, soy <span class="highlight">Erick</span></h1>
-            <h2>Desarrollador y Entusiasta de la Tecnología</h2>
-            <p>Transformo ideas en soluciones digitales prácticas y profesionales.</p>
+            <h1>Hola, soy <span class="primary-text">Erick</span></h1>
+            <p class="hero-sub">Ingeniero de Tecnología especializado en crear soluciones digitales innovadoras y funcionales</p>
             <div class="hero-buttons">
-                <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-                <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+                <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                <a href="#contacto" class="btn btn-outline">Contáctame</a>
+            </div>
+            <a href="#acerca" class="scroll-down">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+                Conoce más
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== ACERCA DE MÍ ===== -->
+    <section id="acerca" class="about">
+        <div class="container">
+            <h2 class="section-title">Acerca de mí</h2>
+            <div class="about-grid">
+                <div class="about-photo">
+                    <img src="imagenes/DSC01850 copia.jpg.jpeg" alt="Erick - Ingeniero de Tecnología">
+                </div>
+                <div class="about-text">
+                    <h3>Ing. Erick</h3>
+                    <p>Soy un profesional apasionado por la tecnología y el desarrollo de soluciones digitales. Mi enfoque está en crear aplicaciones web y móviles que no solo sean funcionales, sino también intuitivas y visualmente atractivas.</p>
+                    <p>Con experiencia en desarrollo frontend y backend, me especializo en transformar ideas en productos digitales que generen impacto real en los negocios y usuarios.</p>
+                    <div class="tags">
+                        <span class="tag">Desarrollo Web</span>
+                        <span class="tag">Apps Móviles</span>
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">Bases de Datos</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Acerca de mí -->
-    <section id="sobre-mi" class="about">
-        <h2 class="section-title">Acerca de mí</h2>
-        <div class="about-container">
-            <div class="about-photo">
-                <img src="imagenes/DSC01850 copia.jpg.jpeg" alt="Foto de Erick">
-            </div>
-            <div class="about-text">
-                <h3>¿Quién soy?</h3>
-                <p>
-                    Soy un joven profesional apasionado por la tecnología y el desarrollo.
-                    Me enfoco en crear experiencias digitales limpias, funcionales y
-                    orientadas al usuario. Me gusta aprender cosas nuevas, resolver
-                    problemas y aportar valor en cada proyecto en el que participo.
-                </p>
-                <ul class="skills">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Diseño Web</li>
-                    <li>Resolución de problemas</li>
-                </ul>
+    <!-- ===== LO QUE OFREZCO ===== -->
+    <section class="offer">
+        <div class="container">
+            <h2 class="section-title">Lo que ofrezco</h2>
+            <p class="section-sub">Servicios profesionales para llevar tu proyecto al siguiente nivel</p>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web modernos, responsivos y optimizados para SEO.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3>Apps Móviles</h3>
+                    <p>Aplicaciones nativas y multiplataforma para iOS y Android.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+                    </div>
+                    <h3>Software a Medida</h3>
+                    <p>Soluciones personalizadas que se adaptan a tus necesidades.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                    </div>
+                    <h3>Bases de Datos</h3>
+                    <p>Diseño y optimización de bases de datos escalables.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Proyectos / Servicios -->
+    <!-- ===== PROYECTOS ===== -->
     <section id="proyectos" class="projects">
-        <h2 class="section-title">Lo que ofrezco</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Desarrollo Web</h3>
-                <p>Creación de sitios web modernos, responsivos y rápidos, adaptados a tus necesidades.</p>
-            </div>
-            <div class="project-card">
-                <h3>Diseño UI/UX</h3>
-                <p>Interfaces atractivas y fáciles de usar, pensadas para mejorar la experiencia del usuario.</p>
-            </div>
-            <div class="project-card">
-                <h3>Soporte Técnico</h3>
-                <p>Asesoría y soporte en tecnología, configuración y optimización de sistemas.</p>
-            </div>
-            <div class="project-card">
-                <h3>Portafolios Digitales</h3>
-                <p>Diseño y desarrollo de portafolios personales para destacar tu perfil profesional.</p>
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <p class="section-sub">Una selección de mis trabajos más recientes</p>
+            <div class="projects-grid">
+                <a href="Numero magico/Numero magico/NumeroMagico.html" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-cover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m6.8 6.8-2.83-2.83"/><path d="M2 12h4"/><path d="m6.8 17.2-2.83 2.83"/><path d="M12 18v4"/><path d="m17.2 17.2 2.83 2.83"/><path d="M18 12h4"/><path d="m17.2 6.8 2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <h3>Número Mágico</h3>
+                        <p>Proyecto interactivo que adivina el número que piensas mediante lógica matemática.</p>
+                        <div class="tags">
+                            <span class="tag small">HTML</span>
+                            <span class="tag small">CSS</span>
+                            <span class="tag small">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="Pagina-Web2/Pagina Web2/Pagina-Web2/index.html" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-cover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <h3>MAC SRL — Aluminio y Cristal</h3>
+                        <p>Sitio web corporativo para MAC SRL, con servicios, galería, formulario de contacto vía WhatsApp y mapa de ubicación.</p>
+                        <div class="tags">
+                            <span class="tag small">HTML</span>
+                            <span class="tag small">CSS</span>
+                            <span class="tag small">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="project-card">
+                    <div class="project-cover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Panel de control con visualización de datos y reportes.</p>
+                        <div class="tags">
+                            <span class="tag small">Next.js</span>
+                            <span class="tag small">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Contacto -->
+    <!-- ===== CONTACTO ===== -->
     <section id="contacto" class="contact">
-        <h2 class="section-title">Contacto</h2>
-        <p class="contact-intro">¿Tienes un proyecto en mente? ¡Hablemos!</p>
-        <div class="contact-grid">
-            <a href="mailto:eg854688@gmail.com" class="contact-card">
-                <h3>Email</h3>
-                <p>eg854688@gmail.com</p>
-            </a>
-            <a href="https://wa.me/18293195912" target="_blank" class="contact-card">
-                <h3>WhatsApp</h3>
-                <p>+1 829-319-5912</p>
-            </a>
-            <a href="https://instagram.com/ing.erick.tech" target="_blank" class="contact-card">
-                <h3>Instagram</h3>
-                <p>@ing.erick.tech</p>
-            </a>
+        <div class="container narrow">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-sub">¿Tienes un proyecto en mente? ¡Hablemos! Estoy disponible para nuevas oportunidades.</p>
+            <div class="contact-grid">
+                <a href="mailto:eg854688@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    </div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">eg854688@gmail.com</span>
+                </a>
+                <a href="https://wa.me/18293195912" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                    </div>
+                    <span class="contact-label">WhatsApp</span>
+                    <span class="contact-value">+1 829 319 5912</span>
+                </a>
+                <a href="https://instagram.com/ing.erick.tech" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </div>
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@ing.erick.tech</span>
+                </a>
+            </div>
         </div>
     </section>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <p>&copy; 2026 Erick. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Erick y Cris Tech. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
